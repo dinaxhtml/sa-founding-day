@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: amiri;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .header {
+    background-color: #f3ebd9;
+    position: relative;
+    direction: rtl;
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  @media (max-width: 767px) {
+    .header .container {
+      flex-wrap: nowrap;
+    }
+  }
+  .header .logo {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .logo img{
+    height: 65px;
+  }
+  @media (max-width: 767px) {
+    .header .logo {
+      width: 100%;
+    }
+    .header .logo img{
+      height: 45px;
+    }
+  }
+  .header .main-nav {
+    display: flex;
+  }
+  @media (max-width: 767px) {
+    .header .main-nav {
+      margin: auto;
+    }
+  }
+  .header .main-nav > li > a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    color: #5f4b3d;
+    padding: 0 30px;
+    font-size: 18px;
+  }
+  @media (max-width: 767px) {
+    .header .main-nav > li > a {
+      padding: 10px;
+      font-size: 14px;
+      height: 40px;
+    }
+  }
+  .header .main-nav > li > a:hover {
+    background-color: #faf4e6fe;
+    transition: 0.3s;
+  }
+  .landing {
+    position: relative;
+    background-color: #fefbf0;
+    height: 100vh;
+    z-index: -1;
+  }
+  .landing .container {
+    display: flex;
+    align-items: center;
+  }
+  .landing .text {
+    flex: 1;
+    direction: rtl;
+    padding: 0 40px;
+  }
+  @media (max-width: 991px) {
+    .landing .text {
+      text-align: center;
+    }
+  }
+  .landing .text h1 {
+    font-size: 100px;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+  }
+  @media (max-width: 767px) {
+    .landing .text h1 {
+      font-size: 35px;
+      margin: 35px 0 12px;
+    }
+  }
+  .landing .text p {
+    font-size: 23px;
+    line-height: 1.7;
+    color: #000;
+    max-width: 500px;
+  }
+  .landing .text .btn {
+    cursor: pointer;
+    background-color: #72554b;
+    font-size: 21px;
+    color: #f3ebd9;
+    width: 170px;
+    font-weight: normal;
+    height: 44px;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+  }
+  @media (max-width: 991px) {
+    .landing .text p {
+      margin: 10px auto;
+    }
+    .landing .text .btn {
+      margin: auto;
+    }
+  }
+  @media (max-width: 767px) {
+    .landing .text p {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 767px) {
+    .landing .text .btn {
+      font-size: 18px;
+      width: 110px;
+      height: 40px;
+    }
+  }
+  .landing .image {
+    position: relative;
+    width: 550px;
+  }
+  .landing .image .img1 {
+    top: -111px;
+    position: absolute;
+    left: 18px;
+    z-index: -1;
+    height: 458px;
+  }
+  .landing .image .img2 {
+    position: absolute;
+    top:30px;
+    left:50px;
+    height: 367px;
+  }
+  @media (max-width: 991px) {
+    .landing .image {
+      position: absolute;
+      width: 550px;
+      z-index: -1;
+      opacity: 20%;
+    }
+  }
+  @media (max-width: 767px) {
+    .landing .image {
+      position: absolute;
+      width: 100px;
+      opacity: 95%;
+    }
+    .landing .image .img1 {
+      top: 174px;
+      position: absolute;
+      left: 18px;
+      z-index: -1;
+      height: 187px;
+    }
+    .landing .image .img2 {
+      position: absolute;
+      top: 210px;
+      margin: auto;
+      height: 170px;
+    }
+  }
